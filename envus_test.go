@@ -66,8 +66,8 @@ func TestRegister(t *testing.T) {
 	}{
 		{
 			name: "Happy Register() with No Load()",
-			args: args {
-				key: "TEST_1",
+			args: args{
+				key:          "TEST_1",
 				defaultValue: "Hello World",
 			},
 		},
@@ -104,22 +104,22 @@ func TestFlow(t *testing.T) {
 	Load()
 
 	if username != "jabgibson" {
-		t.Log("incorrect username: "+username)
+		t.Log("incorrect username: " + username)
 		t.Fail()
 	}
 
 	if password != "abc123" {
-		t.Log("incorrect password: "+password)
+		t.Log("incorrect password: " + password)
 		t.Fail()
 	}
 
 	if url != "https://test.com" {
-		t.Log("incorrect url: "+url)
+		t.Log("incorrect url: " + url)
 		t.Fail()
 	}
 
 	if token != "xyz123" {
-		t.Log("incorrect token: "+token)
+		t.Log("incorrect token: " + token)
 		t.Fail()
 	}
 
@@ -143,7 +143,7 @@ func TestWithoutLocalEnvironment(t *testing.T) {
 	Load()
 
 	if username != "default-username" {
-		t.Log("incorrect username: "+username)
+		t.Log("incorrect username: " + username)
 		t.Fail()
 	}
 }
@@ -159,7 +159,7 @@ func TestUsingJsonFile(t *testing.T) {
 	Load()
 
 	if username != "jabgibson" {
-		t.Log("incorrect username: "+username)
+		t.Log("incorrect username: " + username)
 		t.Fail()
 	}
 }

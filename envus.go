@@ -112,7 +112,7 @@ func Fetch(key string) string {
 }
 
 type envus struct {
-	Prop        []envusProperty `toml:"prop" json:"prop"`
+	Prop []envusProperty `toml:"prop" json:"prop"`
 }
 
 type envusProperty struct {
