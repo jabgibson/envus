@@ -1,0 +1,11 @@
+[[prop]]
+key = "PASSWORD"
+value = "abc123"
+
+[[prop]]
+key = "username"
+value = "jabgibson"
+
+[[prop]]
+key = "secret"
+value = "Rehab the beast"
