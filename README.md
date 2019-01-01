@@ -3,9 +3,10 @@ File based, local environment capable property system.
 
 Register your property key, and envus will find the value using three tiers of definition.
 
-Tier 1: A configured toml / json file containing prop definitions
-Tier 2: Local environment that is toggleable
-Tier 3: A default value passed in while registering variable
+- Tier 1: A configured toml / json file containing prop definitions
+- Tier 2: Local environment that is toggleable
+- Tier 3: A default value passed in while registering variable
+
 
 ```bash
 go get github.com/jabgibson/envus
